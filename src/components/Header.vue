@@ -5,4 +5,3 @@
     <router-link to="/user/2" tag="li" active-class="active"><a>User 2</a></router-link>
   </ul>
 </template>
-li role="presentation"
