@@ -4,7 +4,7 @@
     <p>User loaded has ID: {{ $route.params.id }}</p>
     <router-link
       tag="button"
-      :to="{ name: 'userEdit', query: { locale: 'en', q: 100} }"
+      :to="link"
       class="btn btn-primary">
       Edit user
     </router-link>
@@ -12,5 +12,18 @@
 </template>
 
 <script>
-
+  export default {
+    data() {
+      return {
+        link: {
+          name: 'userEdit',
+          query: {
+            locale: 'en',
+            q: 100
+          },
+          hash: '#data' 
+        }
+      }
+    }
+  }
 </script>
