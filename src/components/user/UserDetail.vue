@@ -21,9 +21,13 @@
             locale: 'en',
             q: 100
           },
-          hash: '#data' 
+          hash: '#data'
         }
       }
+    },
+    beforeRouteEnter(to, from, next) {
+      console.log('beforeRouteEnter');
+      next();
     }
   }
 </script>
